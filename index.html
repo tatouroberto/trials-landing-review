@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Fork Me! FCC: Test Suite Template</title>
+    <style>
+      /*
+      The test doesn't read my css correctly, that's why I put the css here
+      */
+      
+
+      #nav-bar{
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+      }
+      #header{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+
+      #nav-bar ul{
+          list-style: none;
+          display: flex;
+          justify-content: space-between;
+        }
+        
+       
+        .form{
+          padding: 50px 0;
+        }
+
+        .form-input {
+          padding: 10px 0;
+        }
+        #nav-bar a{
+          color: #000;
+        }
+        
+        @media (max-width: 600px) {
+          #nav-bar ul{
+              flex-wrap: wrap;
+            }
+
+            #nav-bar li{
+              margin: 12px 0;
+            }
+        }
+
+
+        .form-input input{
+          padding: 5px 10px;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+        }
+
+        #submit{
+          background: #000;
+          color: #fff;
+          padding: 5px 10px;
+          border: 1px solid #ccc;
+          border-radius: 6px;
+        } 
+        
+        #submit:hover{
+          background: #fff;
+          color: #000;
+
+        }
+      </style>
+  </head>
+
+  <body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header id="header">
+      <img id="header-img" src="https://terecluta.com/wp-content/uploads/2022/04/headerterecluta.png" />
+      <nav id="nav-bar">
+          <ul> 
+            <li><a href="#header" class="nav-link">Home</a></li>
+            <li><a href="#video" class="nav-link">Solutions</a></li>
+            <li><a href="#form" class="nav-link">Princiing</a></li>
+            <li><a href="#header" class="nav-link">Home</a></li>
+            <li><a href="#video" class="nav-link">Solutions</a></li>
+            <li><a href="#form" class="nav-link">Princiing</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="video">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/4YCV1jpnCwE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video"></iframe>
+      </section>
+    
+    <section class="form">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <div class="form-input">
+          <input type="email" name="email" required id="email" placeholder="email" />
+          </div>
+    
+          <input type="submit" id="submit" value="submit" />
+        </form>
+        <p>every thing is ok</p>
+        <p>every thing is ok</p>
+
+      </section>
+      <footer>
+        Copyright
+        </footer>
+    <!--
+
+    Hello Camper!
+
+    For now, the test suite only works in Chrome!
+    Please read the README below in the JS Editor before beginning.
+    Feel free to delete this message once you have read it.
+    Good luck and Happy Coding!
+
+    - The freeCodeCamp Team
+
+    -->
+    <script  src="js/index.js"></script>
+  </body>
+</html>
